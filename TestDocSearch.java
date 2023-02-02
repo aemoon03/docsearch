@@ -8,7 +8,7 @@ public class TestDocSearch {
 	@Test 
 	public void testIndex() throws URISyntaxException, IOException {
     Handler h = new Handler("./written_2/");
-    URI rootPath = new URI("http://localhost/");
+    URI rootPath = new URI("http://localhost:4000/");
     assertEquals("There are 224 total files to search.", h.handleRequest(rootPath));
 	}
 	@Test 
